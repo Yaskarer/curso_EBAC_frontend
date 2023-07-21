@@ -17,7 +17,7 @@ document.getElementById("form.number").addEventListener("submit", function(event
         containerMsgFail.style.display = 'none';
     } else {
         avisoSucesso
-        avisoErro
+        avisoErro 
         containerMsgFail.innerHTML=messagemErro;
         containerMsgFail.style.display = 'block';
         containerMsgSucesso.style.display = 'none';
