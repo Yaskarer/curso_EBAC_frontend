@@ -1,0 +1,171 @@
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3868D6;
+    padding: 16px 0;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative
+}
+
+header li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.sobreAloja {
+    margin-top: 56px;
+}
+
+.sobreAloja h2, p, h3 {
+    margin-left: 32px ;
+}
+
+.sobreAloja img {
+    padding-bottom:16px ;
+}
+
+.titulo {
+    color: #3868D6;
+    border-bottom:3px solid #3868D6 ;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+.sobre {
+    display: flex;
+}
+
+.display-produtos>p{
+    margin-top: 8px;
+}
+
+.display-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    row-gap: 5%;
+    column-gap: 1%;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+    
+.display-produtos img {
+    max-width: 100%;
+}
+
+
+.display-produtos li{
+    list-style: none;
+}
+
+.botaoCarrinho{
+    width: 100%;
+}
+
+.display-produtos button{
+    background-color: #3868D6;
+    color: #fff;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 8px;
+    font-size: medium;
+    border-radius: 4px;
+    border: none;
+}
+
+@media screen and (max-width:640px) {
+    .conteudo {
+        font-display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    .sobreAloja {
+        margin-top: 56px;
+    }
+    
+    .sobreAloja h2,p, h3 {
+        margin-left: 0px ;
+    }
+    
+    .sobreAloja img {
+        padding-bottom:8px;
+        width: 100%;
+    }
+    
+    .titulo {
+        padding-bottom: 4px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+    .sobre {
+        display: block;
+    }
+
+    .display-produtos{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        row-gap: 1%;
+        column-gap: 1%;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    
+    .container{
+        max-width: 90%;
+    }
+    
+    .sobre {
+        display: block;
+    }
+
+    .sobreAloja h2,p, h3 {
+        margin: 16px ;
+        font-size: 2em;
+    }
+
+    .sobreAloja img {
+        margin: 16px;
+        width: 90%;
+    }
+
+    .titulo {
+        padding-bottom: 4px;
+        margin:16px;
+    }
+
+    .display-produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        row-gap: 5%;
+        column-gap: 5%;
+        margin-bottom: 8px;
+    }
+}
